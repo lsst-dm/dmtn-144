@@ -10,7 +10,7 @@
 %\input{aglossary.tex}
 %\makeglossaries
 
-\title{Statement of public data}
+\title{Distribution of Rubin Observatory data outside the data rights community}
 
 % Optional subtitle
 % \setDocSubtitle{A subtitle}
@@ -28,37 +28,30 @@ William O'Mullane
 % \setDocCurator{The Curator of this Document}
 
 \setDocAbstract{%
-DMLT were asked for a brief statement on public data releases. 
+DMLT were asked for a brief statement on public data releases.
 }
 
 % Change history defined here.
 % Order: oldest first.
 % Fields: VERSION, DATE, DESCRIPTION, OWNER NAME.
 % See LPM-51 for version number policy.
-\setDocChangeRecord{%
-  \addtohist{1}{YYYY-MM-DD}{Unreleased.}{William O'Mullane}
-}
-
 
 \begin{document}
 
-% Create the title page.
-\maketitle
 % Frequently for a technote we do not want a title page  uncomment this to remove the title page and changelog.
-% use \mkshorttitle to remove the extra pages
+\mkshorttitle
 
-% ADD CONTENT HERE
-% You can also use the \input command to include several content files.
+\input{body}
 
 \appendix
 % Include all the relevant bib files.
 % https://lsst-texmf.lsst.io/lsstdoc.html#bibliographies
-\section{References} \label{sec:bib}
+\label{sec:bib}
 \bibliography{local,lsst,lsst-dm,refs_ads,refs,books}
 
 % Make sure lsst-texmf/bin/generateAcronyms.py is in your path
-\section{Acronyms} \label{sec:acronyms}
-\input{acronyms.tex}
+%\section{Acronyms} \label{sec:acronyms}
+%\input{acronyms.tex}
 % If you want glossary uncomment below -- comment out the two lines above
 %\printglossaries
 
